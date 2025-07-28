@@ -836,7 +836,6 @@ label[style*="red"] {
 
 /* メインビジュアル */
 .contact{
-    background-color: #e0dcd5;
     color: black;
     padding-top: 50px;
     text-align: center;
@@ -846,7 +845,7 @@ label[style*="red"] {
     font-size: 30px;
 }
 .contact p{
-    font-size: 15px;
+    font-size: 13px;
     color: black;
 }
 
@@ -924,7 +923,6 @@ label[style*="red"] {
     margin: 2rem auto;
     text-align: center;
   padding: 1rem 1.5rem;
-  background-color: black;
   color: white;
   border: none;
   border-radius: 30px;
