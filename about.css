@@ -343,21 +343,17 @@ body{
 
 
 
+
+
+
+
+
 @media screen and (max-width: 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
-  html, body {
-    width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-
-    /* ヘッダー */
+  /* ヘッダー */
 .left-icon {
   position: fixed;
-  display: block;
-  max-width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -365,7 +361,7 @@ body{
   background-color: transparent;
 }
 .left-icon img{
-  width: 40px;
+  width: 60px;
 }
 /* 後ろのハート設定 */
 .heart-button::before,
@@ -396,11 +392,11 @@ body{
 }
 /* 三本線の一番上の棒の位置調整 */
 .drawer_open span:before {
-  bottom: 7px;
+  bottom: 10px;
 }
 /* 三本線の一番下の棒の位置調整 */
 .drawer_open span:after {
-  top: 7px;
+  top: 10px;
 }
 
 /* ボタンホバー時の左上のハートのスタイル */
@@ -432,8 +428,8 @@ body{
 /* ハンバーガーメニュー */
 .drawer_open {
   position: fixed;
-  right: 50px;
-  top: 35px;
+  right: 60px;
+  top: 45px;
   z-index: 100;
   cursor: pointer;
 }
@@ -444,53 +440,49 @@ body{
   content: '';
   display: block;
   height: 2px;
-  width: 20px;
+  width: 30px;
   border-radius: 3px;
   background: #333;
   transition: 0.5s;
   position: absolute;
 }
-.site-tagline{
-  padding-top: 20px;
-  font-size: 10px;
-}
-
 
 
 
 /* ここから本番 */
-
-.about-card img{
+.about-phone {
   width: 100%;
-  text-align: center;
-  border: 2px solid black;
-  margin-top: 100px;
-}
-
-.sns-links{
+  background-image: url('about-bg.png') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
-  gap: 1rem; /* 間隔 */
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', sans-serif;
 }
 
-p{
-  text-align: left;
-  font-size: 13px;
-  padding-top: 50px;
-}
-.instagram{
-  width: 50px;
-}
-.X{
-  width: 50px;
-
-}
-.github{
-  width: 50px;
+.glass-box {
+  margin-top: 50px;
+  font-size: 10px;
 }
 
-
-
-
+.profile-pic img {
+  align-items: center;
+}
+.glass-box {
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(15px); /* モヤっと感 */
+  color: #333;
+}
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
 
 }
