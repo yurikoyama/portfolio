@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <title>ゆりのへ連絡</title>
+    <link rel="icon" href="icon_dog.png" type="favicon-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+
+</head>
+
+<body>
+    <header class="site-header">
+    <div class="left-icon">
+     <a href="index.html" type="heart-button" class="heart-button" aria-controls="navigation" aria-label="メニューを開く">
+        <img src="icon_dog.png" alt="アイコン" class="icon_dog">
+     </a>
+
+    
+  
+  <!-- ハンバーガーメニュー -->
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="nav">
+        
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+    
+        <!-- メニュー -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="index.html">ゆりのおへや</a></li>
+            <li class="nav_item"><a href="about.html">どんなひと？</a></li>
+            <li class="nav_item"><a href="survice.html">サービス</a></li>
+            <li class="nav_item"><a href="form.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+
+
+
+
+<main>
+
+
+  <div class="contact">
+    <h1 class="contact-title">Contact Form</h1>
+    <p class="contact-subtitle">おといあわせ</p>
+  </div>
+
+
+
+  <div class="form-steps">
+    <div class="step current">1. 入力</div>
+    <div class="step">2. 確認</div>
+    <div class="step">3. 完了</div>
+  </div>
+
+  <section class="contact-section">
+    <form action="送信先URL.php" method="post" class="contact-form">
+
+      <!-- ステップ１ -->
+      <div id="form-step1">
+            <p class="form-description">
+            お仕事のご依頼、ご相談、ご質問などがございましたら、
+            下記フォームよりお気軽にご連絡下さい。<br>
+            内容を確認の上、出来るだけ早くご返信させて頂きます。<br>
+            なお、ご相談内容によってはお時間をいただく場合や
+            ご対応が難しい場合がございますが、ご了承ください。<br>
+            【営業時間】平日11時〜18時（土日祝は休業）
+          </p>
+          <div class="gr">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+
+        <label for="kana">ふりがな</label>
+        <input type="text" id="kana" name="kana" placeholder="やまだ たろう" required>
+
+        <label for="tel">電話番号</label>
+        <input type="tel" pattern="^\d{11}$" id="tel" name="tel" placeholder="080****0000" required>
+
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" placeholder="sample@mail.com" required>
+
+        <label for="message">お問い合わせ内容</label>
+        <textarea id="message" name="message" rows="5" placeholder="デザイン案を詳しく聞きたいなど" required></textarea>
+
+        <div id="form-error-message"></div>
+
+        <div class="privacy-policy">
+      <h3>個人情報の取扱いについて</h3>
+      <p>
+        ご入力いただいた個人情報は、お問い合わせへの対応・確認の為のみ利用し、それ以外の目的には使用いたしません。
+        また法令に基づく場合を除き第三者に開示することはありません。
+      </p>
+    </div>
+
+        <button type="button" id="confirm-btn">確認画面へ</button>
+      </div>
+      </div>
+
+
+
+
+      <!-- ステップ２ -->
+      <div id="form-step2" class="hidden">
+            <h2>内容の確認</h2>
+            <p><strong>お名前</strong>
+                <br><span id="confirm-name"></span></p>
+            <p><strong>ふりがな</strong>
+                <br><span id="confirm-kana"></span></p>
+            <p><strong>電話番号</strong>
+                <br><span id="confirm-tel"></span></p>
+            <p><strong>メールアドレス</strong>
+                <br><span id="confirm-email"></span></p>
+            <p><strong>お問合せ内容</strong>
+                <br><span id="confirm-message"></span></p>
+            <button type="button" id="submit-btn" class="submit-btn" onclick="submitForm()">送信</button>
+            <button type="button" id="back-btn" class="back-btn">戻る</button>
+      </div>
+
+      <!-- ステップ３ -->
+      <div id="form-step3" class="hidden">
+        <h2>送信完了しました。</h2>
+        <p>お問い合わせありがとうございます✨<br>
+            内容を確認のうえ、2営業日以内にご連絡いたします。<br>
+            ご連絡まで今しばらくお待ちくださいませ☺️</p>
+
+        <button type="button" class="back-to-top">TOPに戻る</button>
+      </div>
+
+    </form>
+
+  </section>
+</main>
+
+
+
+  <!-- フッター -->
+  <footer class="footer">
+    <p>@Yuri Koyama 2025</p>
+  </footer>
+
+
+</body>
+
