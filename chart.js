@@ -73,8 +73,7 @@ new Chart(ctxJS, {
         text: "80%",
         color: "#007396",
         font: {
-          size: 30,
-          weight: "bold"
+          size: 30
         }
       }
     }
@@ -103,8 +102,7 @@ new Chart(ctxWP, {
         text: "60%",
         color: "#8892be",
         font: {
-          size: 30,
-          weight: "bold"
+          size: 30
         }
       }
     }
@@ -134,8 +132,7 @@ new Chart(ctxreact, {
         text: "45%",
         color: "#87CEEB",
         font: {
-          size: 30,
-          weight: "bold"
+          size: 30
         }
       }
     }
@@ -165,8 +162,7 @@ new Chart(ctxNode, {
         text: "55%",
         color: "#339933",
         font: {
-          size: 30,
-          weight: "bold"
+          size: 30
         }
       }
     }
