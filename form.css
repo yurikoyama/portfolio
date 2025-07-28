@@ -13,8 +13,12 @@ main{
 
 
 
+/* ヘッダー */
+
 .site-header {
+  background-color: #ffdfe4;
   text-align: center;
+  padding: 10px 0;
   z-index: 999;
 }
 
@@ -53,7 +57,7 @@ main{
 .heart-button::after {
   background-image: url('heart-reverse.svg');
   bottom: 20px;
-  right: 25px;
+  right: 20px;
 }
 /* ボタンホバー時のスタイル */
 .heart-button:hover {
@@ -114,11 +118,11 @@ main{
 }
 /* 三本線の一番上の棒の位置調整 */
 .drawer_open span:before {
-  bottom: 12px;
+  bottom: 13px;
 }
 /* 三本線の一番下の棒の位置調整 */
 .drawer_open span:after {
-  top: 12px;
+  top: 13px;
 }
 /* アイコンがクリックされたら真ん中の線を透明にする */
 #drawer_input:checked ~ .drawer_open span {
@@ -141,7 +145,7 @@ main{
   top: 0%;
   left: 100%; /* メニューを画面の外に飛ばす */
   z-index: 99;
-  background: white;
+  background-color: white;
   transition: .5s;
   text-align: center;
   padding-top: 200px;
@@ -154,11 +158,11 @@ main{
   color: black;
   text-decoration: none;
   font-size: 20px;
-  padding: 50px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 .nav_item a:hover{
-  color: grey;
+  color: #f3c6cc;
 }
 .nav_content li{
   padding: 20px;
@@ -170,6 +174,8 @@ main{
 .site-tagline{
   padding-top: 20px;
 }
+
+/* ヘッダーここまで */
 
 
 
