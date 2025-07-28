@@ -1,14 +1,20 @@
-html {
-  scroll-behavior: smooth;
-}
-body {
-  background: url(marble-bg.jpg) no-repeat center center / cover;
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  color: #333;
+  background-image: url(marble-bg.jpg);
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 main{
-    padding: 50px 0px 100px 0px;
+  flex: 1;
 }
 
 
@@ -16,7 +22,6 @@ main{
 /* ヘッダー */
 
 .site-header {
-  background-color: #ffdfe4;
   text-align: center;
   padding: 10px 0;
   z-index: 999;
@@ -185,6 +190,8 @@ main{
 
 
 
+
+
 /* メインビジュアル */
 .contact{
     color: black;
@@ -197,8 +204,9 @@ main{
     padding-top: 50px;
 }
 .contact p{
+    font-size: 20px;
     padding-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     color: black;
 }
 
@@ -256,6 +264,7 @@ main{
   font-size: 0.95rem;
   line-height: 1.8;
   color: #555;
+  margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -301,7 +310,7 @@ label[style*="red"] {
 }
 
 /* === ボタン（確認画面へ） === */
-#confirm-btn a{
+#confirm-btn {
   background: linear-gradient(to right, #F9D857, #D4AF37);
   color: white;
   padding: 12px 24px;
@@ -313,9 +322,8 @@ label[style*="red"] {
   display: block;
   box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
   transition: 0.3s ease;
-  text-align: center;
 }
-#confirm-btn a:hover {
+#confirm-btn:hover {
   opacity: 0.9;
 }
 
@@ -413,7 +421,7 @@ label[style*="red"] {
   font-size: 20px;
 }
 
-.submit-btn {
+#submit-btn{
   background: linear-gradient(to right, #F9D857, #D4AF37);
   color: white;
   padding: 12px 24px;
@@ -427,7 +435,7 @@ label[style*="red"] {
   transition: 0.3s ease;
 }
 
-.submit-btn:hover {
+#submit-btn:hover {
   opacity: 0.9;
 }
 
@@ -521,12 +529,16 @@ label[style*="red"] {
 .footer {
   text-align: center;
   padding:5px;
-  color: #000;
-  background-color: #fff;
+  color: black;
 }
 .footer p{
   font-size: 15px;
 }
+
+
+
+
+
 
 
 
@@ -657,8 +669,7 @@ label[style*="red"] {
   text-align: center;
   padding: 5px;
   font-size: 10px;
-  color: white;
-  background-color: black;
+  color: black;
 }
 
 
@@ -681,19 +692,20 @@ label[style*="red"] {
   /* スマホ用の見た目はここに書く */
   /* 犬アイコンの設定 */
 
- /* ヘッダー */
 .left-icon {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 20px;
+  padding: 30px;
   background-color: transparent;
 }
 .left-icon img{
-  width: 60px;
+  width: 50px;
 }
+
 /* 後ろのハート設定 */
+
 .heart-button::before,
 .heart-button::after{
   content: "";
@@ -706,37 +718,27 @@ label[style*="red"] {
 }
 .heart-button::before {
   background-image: url('heart.svg');
-  top: 30px;
-  left: 10px;
+  top: -40;
+  left: 40px;
 }
 /* 右下のハートのスタイル */
 .heart-button::after {
   background-image: url('heart-reverse.svg');
-  bottom: 0px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
 }
 /* ボタンホバー時のスタイル */
-.heart-button:active {
+.heart-button:hover {
   border-color: #ef4b53;
   color: #ef4b53;
 }
-/* 三本線の一番上の棒の位置調整 */
-.drawer_open span:before {
-  bottom: 10px;
-}
-/* 三本線の一番下の棒の位置調整 */
-.drawer_open span:after {
-  top: 10px;
-}
-
 /* ボタンホバー時の左上のハートのスタイル */
-.heart-button:active::before {
+.heart-button:hover::before {
   animation: heart 1.5s infinite ease-out;
 }
 /* ボタンホバー時の右下のハートのスタイル */
-.heart-button:active::after {
+.heart-button:hover::after {
   animation: heart 1.5s 0.2s infinite ease-out;
-  animation-play-state: paused;
 }
 /* ========= アニメーションの設定 ======== */
 @keyframes heart {
@@ -755,11 +757,17 @@ label[style*="red"] {
     opacity: 0;
   }
 }
+
 /* ハンバーガーメニュー */
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+/* ハンバーガーアイコンの設置スペース */
 .drawer_open {
   position: fixed;
-  right: 60px;
-  top: 45px;
+  right: 70px;
+  top: 50px;
   z-index: 100;
   cursor: pointer;
 }
@@ -776,9 +784,63 @@ label[style*="red"] {
   transition: 0.5s;
   position: absolute;
 }
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 7px;
+}
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 7px;
+}
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+/* メニューのデザイン*/
+.nav_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 100%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: white;
+  transition: .5s;
+  text-align: center;
+  padding-top: 200px;
+}
+/* メニュー黒ポチを消す */
+.nav_list {
+  list-style: none;
+}
+.nav_item a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+.nav_item a:hover{
+  color: blue;
+}
+.nav_content li{
+  padding: 20px;
+}
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  left: 0;
+}
 .site-tagline{
-  padding-top: 30px;
-  font-size: 12px;
+  padding-top: 20px;
 }
 
 
@@ -792,6 +854,7 @@ label[style*="red"] {
 
 /* メインビジュアル */
 .contact{
+    background-color: #e0dcd5;
     color: black;
     padding-top: 50px;
     text-align: center;
@@ -801,7 +864,7 @@ label[style*="red"] {
     font-size: 30px;
 }
 .contact p{
-    font-size: 13px;
+    font-size: 15px;
     color: black;
 }
 
@@ -879,6 +942,7 @@ label[style*="red"] {
     margin: 2rem auto;
     text-align: center;
   padding: 1rem 1.5rem;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 30px;
@@ -975,8 +1039,6 @@ label[style*="red"] {
   text-align: center;
   font-size: 10px;
   color: black;
-  padding: 10px;
-  
 }
 
 }
