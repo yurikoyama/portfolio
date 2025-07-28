@@ -949,6 +949,8 @@ main{
 
 /* フッター */
 .footer {
+ font-family: "Darumadrop One", sans-serif;
+ letter-spacing:2px;
   background-color: #f3c6cc;
   text-align: center;
   padding: 10px;
