@@ -42,8 +42,7 @@ new Chart(ctxHTML, {
         text: "90%",
         color: "#E34F26",
         font: {
-          size: 30,
-          weight: "bold"
+          size: 30
         }
       }
     }
