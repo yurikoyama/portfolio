@@ -458,7 +458,7 @@ main{
   background-color: rgba(255, 255, 255, 0.735);
   flex-direction: column;
   margin-top: 100px;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 60px;
 }
 .tools p{
@@ -467,7 +467,7 @@ main{
   line-height: 3;
   padding-top: 50px;
   color: #1E2B45;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -721,6 +721,7 @@ main{
   color:  #1E2B45;
   font-size: 30px;
   font-family: "Times New Roman";
+  padding-top: 100px;
 }
 .introduction p {
   font-size: 15px;
@@ -741,13 +742,13 @@ main{
   flex-direction: column;
   padding-top: 15px;
   padding-bottom: 30px;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .about p{
   font-family: "Darumadrop One", sans-serif;
   font-size: 13px;
-  line-height: 2;
-  padding-top: 50px;
+  line-height: 2.5;
+  padding-top: 30px;
   color: #1E2B45;
   text-align: center;
 }
@@ -804,19 +805,21 @@ main{
   display: flex;
   padding-top: 50px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .service-box {
+  width: calc(50% - 20px);
   background-color: #ffe6e8;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   flex: 1 1 calc(33.333% - 20px);
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 30px;
   border-radius: 12px;
   justify-content: space-between;
+  text-align: center;
   height: 150px;
 }
 .service-box:hover{
@@ -920,13 +923,14 @@ main{
   margin-top: 20px;
 }
 .tools{
-  padding-top: 100px;
+  justify-content: center;
+  width: 100%;
 }
 .tools p{
   font-family: "Darumadrop One", sans-serif;
   font-size: 13px;
-  line-height: 2;
-  padding-top: 50px;
+  line-height: 3;
+  padding: 30px;
   color: #1E2B45;
   text-align: center;
 }
@@ -952,7 +956,7 @@ main{
 }
 
 .contact-img {
-  width: 35%; /* サイズ調整してね */
+  width: 50%; /* サイズ調整してね */
   margin-bottom: 30px;
 }
 
