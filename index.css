@@ -528,6 +528,8 @@ main{
 /* フッター */
 .footer {
   background-color: #f3c6cc;
+  color: #444;
+  letter-spacing: 1px;
   text-align: center;
   font-size: 14px;
   width: 100%;
