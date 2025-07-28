@@ -692,20 +692,19 @@ label[style*="red"] {
   /* スマホ用の見た目はここに書く */
   /* 犬アイコンの設定 */
 
+  /* ヘッダー */
 .left-icon {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  padding: 30px;
+  padding: 20px;
   background-color: transparent;
 }
 .left-icon img{
-  width: 50px;
+  width: 60px;
 }
-
 /* 後ろのハート設定 */
-
 .heart-button::before,
 .heart-button::after{
   content: "";
@@ -718,27 +717,37 @@ label[style*="red"] {
 }
 .heart-button::before {
   background-image: url('heart.svg');
-  top: -40;
-  left: 40px;
+  top: 30px;
+  left: 10px;
 }
 /* 右下のハートのスタイル */
 .heart-button::after {
   background-image: url('heart-reverse.svg');
-  bottom: 20px;
-  right: 20px;
+  bottom: 0px;
+  right: 10px;
 }
 /* ボタンホバー時のスタイル */
-.heart-button:hover {
+.heart-button:active {
   border-color: #ef4b53;
   color: #ef4b53;
 }
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 10px;
+}
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 10px;
+}
+
 /* ボタンホバー時の左上のハートのスタイル */
-.heart-button:hover::before {
+.heart-button:active::before {
   animation: heart 1.5s infinite ease-out;
 }
 /* ボタンホバー時の右下のハートのスタイル */
-.heart-button:hover::after {
+.heart-button:active::after {
   animation: heart 1.5s 0.2s infinite ease-out;
+  animation-play-state: paused;
 }
 /* ========= アニメーションの設定 ======== */
 @keyframes heart {
@@ -757,17 +766,11 @@ label[style*="red"] {
     opacity: 0;
   }
 }
-
 /* ハンバーガーメニュー */
-/* チェックボックスを非表示にする */
-.drawer_hidden {
-  display: none;
-}
-/* ハンバーガーアイコンの設置スペース */
 .drawer_open {
   position: fixed;
-  right: 70px;
-  top: 50px;
+  right: 60px;
+  top: 45px;
   z-index: 100;
   cursor: pointer;
 }
@@ -784,64 +787,6 @@ label[style*="red"] {
   transition: 0.5s;
   position: absolute;
 }
-/* 三本線の一番上の棒の位置調整 */
-.drawer_open span:before {
-  bottom: 7px;
-}
-/* 三本線の一番下の棒の位置調整 */
-.drawer_open span:after {
-  top: 7px;
-}
-/* アイコンがクリックされたら真ん中の線を透明にする */
-#drawer_input:checked ~ .drawer_open span {
-  background: rgba(255, 255, 255, 0);
-}
-/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-#drawer_input:checked ~ .drawer_open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-}
-#drawer_input:checked ~ .drawer_open span::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-/* メニューのデザイン*/
-.nav_content {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0%;
-  left: 100%; /* メニューを画面の外に飛ばす */
-  z-index: 99;
-  background: white;
-  transition: .5s;
-  text-align: center;
-  padding-top: 200px;
-}
-/* メニュー黒ポチを消す */
-.nav_list {
-  list-style: none;
-}
-.nav_item a {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 50px;
-  margin-bottom: 20px;
-}
-.nav_item a:hover{
-  color: blue;
-}
-.nav_content li{
-  padding: 20px;
-}
-/* アイコンがクリックされたらメニューを表示 */
-#drawer_input:checked ~ .nav_content {
-  left: 0;
-}
-.site-tagline{
-  padding-top: 20px;
-}
 
 
 
@@ -854,14 +799,13 @@ label[style*="red"] {
 
 /* メインビジュアル */
 .contact{
-    background-color: #e0dcd5;
     color: black;
     padding-top: 50px;
     text-align: center;
 }
 .contact h1{
     font-family: "Times New Roman";
-    font-size: 30px;
+    font-size: 40px;
 }
 .contact p{
     font-size: 15px;
@@ -891,7 +835,15 @@ label[style*="red"] {
   background-color: black;
   font-weight: bold;
 }
+.form-step1{
+  width: 100%;
+  margin: 0 auto;
+}
+.form-description{
+  width: 100%;
+  font-size: 13px;
 
+}
 
 
 
@@ -899,17 +851,16 @@ label[style*="red"] {
 
 /* ===== フォーム全体 ===== */
 .gr{
-    width: 300px;
+    width: 100%;
     background-color: white;
-    padding: 20px;
     border-radius: 40px;
-    text-align: left;
-    margin: 50px auto;
+    text-align: center;
+    margin: 50px 0px;
     font-size: 10px;
 }
 
 .contact-form {
-  max-width: 300px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1026,6 +977,7 @@ label[style*="red"] {
   border-radius: 10px;
 }
 .privacy-policy p{
+  color: black;
     font-size: 10px;
 }
 .form-steps .step.current {
