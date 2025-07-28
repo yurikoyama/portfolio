@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stepIndicators[2].classList.add('current');
     step3.scrollIntoView({ behavior: 'smooth', block: 'start' });
     // 実際に送信する場合は以下を有効化
-    // form.submit();
+    form.submit();
   };
 
   // 「トップに戻る」ボタン
