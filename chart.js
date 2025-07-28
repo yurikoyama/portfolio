@@ -35,7 +35,7 @@ new Chart(ctxHTML, {
     }]
   },
   options: {
-    cutout: "70%",
+    cutout: "80%",
     plugins: {
       legend: { display: false },
       centerText: {
@@ -66,7 +66,7 @@ new Chart(ctxJS, {
     }]
   },
   options: {
-    cutout: "70%",
+    cutout: "80%",
     plugins: {
       legend: { display: false },
         centerText: {
@@ -96,7 +96,7 @@ new Chart(ctxWP, {
     }]
   },
   options: {
-    cutout: "70%",
+    cutout: "80%",
     plugins: {
       legend: { display: false },
       centerText: {
@@ -127,7 +127,7 @@ new Chart(ctxreact, {
     }]
   },
   options: {
-    cutout: "70%",
+    cutout: "80%",
     plugins: {
       legend: { display: false },
       centerText: {
@@ -158,7 +158,7 @@ new Chart(ctxNode, {
     }]
   },
   options: {
-    cutout: "70%",
+    cutout: "80%",
     plugins: {
       legend: { display: false },
       centerText: {
