@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <title>ゆりのへや</title>
+    <link rel="icon" href="icon_dog.png" type="favicon-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- AOSのCSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="index.js"></script> <!-- JavaScriptを外部から読み込む -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+
+
+<!-- ここからメイン -->
+<body>
+  <div class="wrapper">
+    <!-- ヘッダー -->
+    <header class="site-header">
+      <div class="left-icon">
+        <a href="#top" type="heart-button" class="heart-button" aria-controls="navigation" aria-label="メニューを開く">
+          <img src="icon_dog.png" alt="アイコン" class="icon_dog">
+        </a>
+      </div>
+
+      
+    
+    <!-- ハンバーガーメニュー -->
+        <div class="nav">
+          <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+          <input id="drawer_input" class="drawer_hidden" type="checkbox">
+          <!-- ハンバーガーアイコン -->
+          <label for="drawer_input" class="drawer_open"><span></span></label>
+          <!-- メニュー -->
+          <nav class="nav_content">
+            <ul class="nav_list">
+              <li class="nav_item"><a href="#top">ゆりのおへや</a></li>
+              <li class="nav_item"><a href="about.html">どんなひと？</a></li>
+              <li class="nav_item"><a href="#jobs">サービス</a></li>
+              <li class="nav_item"><a href="form.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <p class="site-tagline" id="#top"> ♡ ぽーとふぉりおさいと ♡</p>
+
+      </header>
+
+
+
+
+
+
+
+
+      <main>
+
+          <!-- メインビジュアル -->
+        <section class="hello">
+          <h1>YURI<br>KOYAMA</h1>
+          <img src="a web designer.png" alt="a web designer" class="sub-title">
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- 自己紹介 -->
+      <div class="introduction">
+          <h2 class="about-title" data-aos="fade-up" data-aos-duration="1000">ABOUT ME</h2>
+          <p class="about-subtitle" data-aos="fade-up" data-aos-duration="2000">私について</p>
+            <section class="about" data-aos="fade-up" data-aos-duration="3000"
+              data-aos-delay="150" data-aos-easing="ease-out-cubic">
+              <p>こんにちは！
+              <br>Webデザイナーの コヤマ ユリ と申します。<br><br>
+
+              “伝わる・使いやすい”を大切に、<br>
+              あなたの魅力を最大化するデザインを提供します。<br>
+              「こんなサイトがあったら便利だな」<br>
+              「もっと伝わるようにしたい」と感じたら、<br>
+              ぜひ一緒に“理想”をカタチにしていきましょう！
+              <br><br>
+
+              初めての方でも安心して進められるよう、<br>
+              丁寧なヒアリングを元に<br>
+              あなたの「らしさ」や「思い」を反映した<br>
+              サイトづくりをお約束します。
+              <br><br>
+
+              まずはお気軽にご相談ください♪
+              <br>
+              </p>
+              <a href="form.html" class="consult-button"> 相談する</a>
+
+            </section>
+        </div>
+
+
+
+
+
+
+        <!-- Service -->
+        <section class="service" id="jobs">
+
+          <h2 data-aos="fade-up">MY JOBs</h2>
+          <p data-aos="fade-up">お仕事内容</p>
+
+          <div class="service-container">
+
+            <!-- ボックス1 -->
+            <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+              <h3>HP制作</h3>
+              <img src="HP.png" alt="ホームページ制作" class="HP-img">
+              <p>スマホ対応◎ / SEO対策◎ / 導線設計もサポート
+              </p>
+            </div>
+
+            <!-- ボックス２ -->
+            <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+              <h3> LP制作</h3>
+              <img src="LP.png" alt="ランディングページ制作" class="LP-img">
+              <p>1枚で魅力を伝えるランディングページを制作。</p>
+            </div>
+
+            <!-- ボックス３ -->
+            <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+              <h3>バナー・画像制作</h3>
+              <img src="banner.png" alt="バナー・画像制作" class="banner-img">
+              <p>女性向けデザインで印象に残る画像を。</p>
+            </div>
+
+            <!-- ボックス４ -->
+            <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" data-aos-easing="ease-out-cubic">
+              <h3>ライティングサポート</h3>
+              <img src="ligting.png" alt="ライティングサポート" class="writing-img">
+              <p>言葉に自信がない方も安心。伝わる文章を提案。</p>
+            </div>
+
+            <!-- ボックス５ -->
+            <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-out-cubic">
+              <h3>運用サポート</h3>
+              <img src="suport.png" alt="サイト運用サポート" class="support-img">
+              <p>更新やメンテナンスもお任せください。</p> 
+          </div>
+
+            <!-- ボックス６ -->
+            <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-easing="ease-out-cubic">
+              <h3>教材</h3>
+              <img src="teach.png" alt="教材" class="teach-img">
+              <p>サイト改善や集客のアドバイスを提供。</p>
+            </div>
+          </div>
+          
+        </section>
+
+
+        
+
+        <!-- works -->
+        
+        <section class="skills">
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">My Skills</h2>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">できること</p>
+
+          <!-- チャート -->
+           <div class="chart-list">
+              <div class="chart-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+                <canvas id="htmlChart" width="150" height="150"></canvas>
+                <h3>HTML/CSS</h3>
+              </div>
+
+              <div class="chart-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+                <canvas id="jsChart" width="150" height="150"></canvas>
+                <h3>JavaScript</h3>
+              </div>
+
+              <div class="chart-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+                <canvas id="wpChart" width="150" height="150"></canvas>
+                <h3>PHP</h3>
+              </div>
+
+              <div class="chart-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+                <canvas id="reactChart" width="150" height="150"></canvas>
+                <h3>React</h3>
+              </div>
+
+              <div class="chart-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+                <canvas id="NodeChart" width="150" height="150"></canvas>
+                <h3>Node.js</h3>
+              </div>
+           </div>
+
+           <div class="tools" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-out-cubic">
+            <p>普段は WordPress を使って、、ホームページやWebサイトの制作をしています。<br><br>
+
+「見た目の可愛さ」だけでなく、使いやすさ や 伝わりやすさ も大切にしています<br>
+デザインは Figma や Illustrator を使用してお客様のご要望にそうよう丁寧に設計し、<br>
+バナーや画像は Canva を活用して、おしゃれに仕上げます。<br><br>
+
+また、コーディングも全て一人で行なっているので安心して<br>
+カスタマイズ や スマホ対応（レスポンシブ対応）、SEO対策<br>対応にも対応していただけます！<br><br>
+
+「こんなの作ってほしいな〜」というざっくりしたイメージでも大丈夫です◎<br>
+あなたの想いがしっかり伝わるよう、デザインから公開まで全てサポートいたします✨
+
+<br>
+            </p>
+           </div>
+
+
+        </section>
+
+        <!-- Chart.jsの本体（CDN） -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- 自作のJSファイル -->
+        <script src="chart.js"></script>
+
+
+
+
+
+        <!-- contact -->
+        <section class="contact">
+          <h2>CONTACT</h2>
+          <p>おといあわせ</p>
+          <img src="chuu.png" alt="お問い合わせ" class="contact-img">
+              <a href="form.html" class="btn-heart">ゆりに連絡する</a>
+
+            </section>
+
+
+
+    </main>
+
+    <!-- フッター -->
+        <footer class="footer">
+          <p>@Yuri Koyama 2025 portfolio</p>
+        </footer>
+    </div>
+
+
+    <!-- AOSのJS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</div>
+  </body>
+</html>
