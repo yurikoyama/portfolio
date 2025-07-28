@@ -715,7 +715,6 @@ main{
   text-align: center;
   padding: 0;
   padding-bottom: 100px;
-padding-top: 80px;
 }
 
 .introduction h2 {
@@ -921,8 +920,7 @@ padding-top: 80px;
   margin-top: 20px;
 }
 .tools{
-  padding-top: 50px;
-width: 100%;
+  padding-top: 100px;
 }
 .tools p{
   font-family: "Darumadrop One", sans-serif;
@@ -931,7 +929,6 @@ width: 100%;
   padding-top: 50px;
   color: #1E2B45;
   text-align: center;
- width: 80px;
 }
 
 
@@ -955,7 +952,7 @@ width: 100%;
 }
 
 .contact-img {
-  width: 50%; /* サイズ調整してね */
+  width: 35%; /* サイズ調整してね */
   margin-bottom: 30px;
 }
 
