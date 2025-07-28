@@ -913,15 +913,12 @@ main{
   padding-top: 100px;
 }
 .tools p{
-  font-size: 15px;
-  line-height: 1.5;
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 13px;
+  line-height: 2;
+  padding-top: 50px;
   color: #1E2B45;
-  padding: 60px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: left;
-  background-color: rgba(255, 255, 255, 0.735);
-  border-radius: 30px;
+  text-align: center;
 }
 
 
