@@ -650,7 +650,8 @@ label[style*="red"] {
   text-align: center;
   padding: 5px;
   font-size: 10px;
-  color: black;
+  color: white;
+  background-color: black;
 }
 
 
