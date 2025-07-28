@@ -307,6 +307,7 @@ label[style*="red"] {
   display: block;
   box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
   transition: 0.3s ease;
+  text-align: center;
 }
 #confirm-btn a:hover {
   opacity: 0.9;
