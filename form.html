@@ -42,11 +42,7 @@
         </nav>
 
       </div>
-        <p class="site-tagline" id="#top"> ♡ こんたくとふぉーむ ♡</p>
     </header>
-
-
-
 
 
 <main>
@@ -66,45 +62,51 @@
   </div>
 
   <section class="contact-section">
-    <form action="send.php" method="post" class="contact-form">
+    <form action="https://formspree.io/f/xrblkejy" method="post" class="contact-form">
 
       <!-- ステップ１ -->
       <div id="form-step1">
             <p class="form-description">
-            お仕事のご依頼、ご相談、ご質問などがございましたら、
+            お仕事のご依頼、ご相談、ご質問などがございましたら、<br>
             下記フォームよりお気軽にご連絡下さい。<br>
             内容を確認の上、出来るだけ早くご返信させて頂きます。<br>
-            なお、ご相談内容によってはお時間をいただく場合や
+            なお、ご相談内容によってはお時間をいただく場合や<br>
             ご対応が難しい場合がございますが、ご了承ください。<br>
             【営業時間】平日11時〜18時（土日祝は休業）
           </p>
+
+
           <div class="gr">
-        <label for="name">お名前</label>
-        <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" placeholder="山田 太郎" required>
 
-        <label for="kana">ふりがな</label>
-        <input type="text" id="kana" name="kana" placeholder="やまだ たろう" required>
+            <label for="kana">ふりがな</label>
+            <input type="text" id="kana" name="kana" placeholder="やまだ たろう" required>
 
-        <label for="tel">電話番号</label>
-        <input type="tel" pattern="^\d{11}$" id="tel" name="tel" placeholder="080****0000" required>
+            <label for="tel">電話番号</label>
+            <input type="tel" pattern="^\d{11}$" id="tel" name="tel" placeholder="080****0000" required>
 
-        <label for="email">メールアドレス</label>
-        <input type="email" id="email" name="email" placeholder="sample@mail.com" required>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" placeholder="sample@mail.com" required>
 
-        <label for="message">お問い合わせ内容</label>
-        <textarea id="message" name="message" rows="5" placeholder="デザイン案を詳しく聞きたいなど" required></textarea>
+            <label for="message">お問い合わせ内容</label>
+            <textarea id="message" name="message" rows="5" placeholder="デザイン案を詳しく聞きたいなど" required></textarea>
 
-        <div id="form-error-message"></div>
+            <div id="form-error-message"></div>
 
-        <div class="privacy-policy">
-      <h3>個人情報の取扱いについて</h3>
+            <div class="privacy-policy">
+
+              
+             <h3>個人情報の取扱いについて</h3>
       <p>
         ご入力いただいた個人情報は、お問い合わせへの対応・確認の為のみ利用し、それ以外の目的には使用いたしません。
         また法令に基づく場合を除き第三者に開示することはありません。
       </p>
     </div>
 
-        <button type="button" id="confirm-btn"><a href="#top">確認画面へ</a></button>
+      <button type="button" id="confirm-btn">確認画面へ</button>
+
+
       </div>
       </div>
 
@@ -124,8 +126,9 @@
                 <br><span id="confirm-email"></span></p>
             <p><strong>お問合せ内容</strong>
                 <br><span id="confirm-message"></span></p>
-            <button type="button" id="submit-btn" class="submit-btn" onclick="submitForm()"><a href="#top">送信</a></button>
+            <button type="button" id="submit-btn" onclick="submitForm()">送信</button>
             <button type="button" id="back-btn" class="back-btn">戻る</button>
+      </div>
       </div>
 
       <!-- ステップ３ -->
