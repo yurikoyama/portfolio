@@ -810,7 +810,7 @@ main{
 }
 
 .service-box {
-  width: calc(50% - 20px);
+  width: 50%;
   background-color: #ffe6e8;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
