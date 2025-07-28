@@ -922,7 +922,7 @@ padding-top: 80px;
 }
 .tools{
   padding-top: 50px;
-width: 90%;
+width: 100%;
 }
 .tools p{
   font-family: "Darumadrop One", sans-serif;
@@ -931,6 +931,7 @@ width: 90%;
   padding-top: 50px;
   color: #1E2B45;
   text-align: center;
+ width: 80px;
 }
 
 
