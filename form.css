@@ -295,7 +295,7 @@ label[style*="red"] {
 }
 
 /* === ボタン（確認画面へ） === */
-#confirm-btn {
+#confirm-btn a{
   background: linear-gradient(to right, #F9D857, #D4AF37);
   color: white;
   padding: 12px 24px;
@@ -308,7 +308,7 @@ label[style*="red"] {
   box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
   transition: 0.3s ease;
 }
-#confirm-btn:hover {
+#confirm-btn a:hover {
   opacity: 0.9;
 }
 
@@ -514,8 +514,8 @@ label[style*="red"] {
 .footer {
   text-align: center;
   padding:5px;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #fff;
 }
 .footer p{
   font-size: 15px;
