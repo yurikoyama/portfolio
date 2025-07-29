@@ -796,7 +796,6 @@ label[style*="red"] {
 
 
 
-
 /* メインビジュアル */
 .contact{
     color: black;
@@ -928,42 +927,73 @@ label[style*="red"] {
 
 /* ===== 確認画面・完了画面 ===== */
 #form-step2 {
-  max-width: 600px;
-  padding: 5rem;
-  border-radius: 5px;
-  color: black;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px); /* Safari対応 */
+  background: rgba(255, 255, 255, 0.3); /* 白ベースで透け感あり */
+  border: 2px solid #EED9B5; /* ゴールド系 */
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  padding: 50px 30px;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+#form-step2 h2 {
+  font-size: 30px;
+  color: #B29700;
   text-align: center;
-  background-color: white;
-
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
-.form-step2{
-  background: rgba(255, 255, 255, 0.2); /* 半透明 */
-  backdrop-filter: blur(10px);          /* 背景をぼかす */
-  -webkit-backdrop-filter: blur(10px);  /* Safari対応 */
-  border-radius: 12px;                  /* 角丸 */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* 枠線ちょい白く */
+#form-step2 p {
+  width: 90%;
+  background: #fdf9f4;
+  border-left: 4px solid #EED9B5;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
 }
 
-.form-step2, h2{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    padding-bottom: 60px ;
-}
-.form-step2, p{
-    padding: 30px;
-    font-size: 18px;
-}
-.submit-btn{
-    padding: 20px;
-}
-.back-btn{
-    background-color: white;
+#form-step2 p strong {
+  display: block;
+  color: #333;
+  font-size: 15px;
 }
 
-.formstep3, p{
-    text-align: center;
+#submit-btn{
+  background: linear-gradient(to right, #F9D857, #D4AF37);
+  color: white;
+  padding: 12px 24px;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 30px auto 10px;
+  display: block;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  transition: 0.3s ease;
+}
+
+#submit-btn:hover {
+  opacity: 0.9;
+}
+
+.back-btn {
+  color: #333;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #999;
+  margin-top: 0px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===== プライバシーポリシー ===== */
@@ -984,6 +1014,20 @@ label[style*="red"] {
   font-weight: bold;
   color: white; /* ピンクとか目立たせたい色 */
 }
+
+#form-step3 h2 {
+  font-size: 20px;
+  color: #B29700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#form-step3 p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
 
 
 /* ===== フッター ===== */
