@@ -309,81 +309,69 @@ main{
 
 
 /* サービス */
-.service {
-  text-align: center;
-  padding: 200px 150px;
-}
-.service h2{
-  color: #1E2B45;
-  font-size: 50px;
-  display: inline-block;
-  font-family: "Times New Roman";
-}
-.service p{
-  color: #1E2B45;
-  font-size: 20px;
-}
-.service-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 80px 24px;
-  margin: auto;
-}
+  .accordion-toggle {
+    /* display: none; PCではボタン非表示 */
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }
 
-.service-box {
-  background: rgb(255, 234, 234);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  padding: 32px;
-  text-align: center;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: relative;
-  overflow: hidden;
-}
+  .accordion-content {
+    max-height: none !important;
+    overflow: visible;
+  }
 
-.service-box:hover {
-  background-color: #9595958d;
-}
+  .service {
+    text-align: center;
+    padding: 200px 150px;
+  }
 
-.service-box h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #FFD700; /* ゴールド */
-  margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
-}
+  .service h2{
+    font-size: 50px;
+    font-family: "Times New Roman";
+  }
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 80px 24px;
+    margin: auto;
+  }
 
-.service-box img {
-  width: 60%;
-  margin-bottom: 20px;
-  filter: drop-shadow(0 2px 6px rgba(255, 255, 255, 0.3));
-}
+  .service-box {
+    background: rgba(255, 234, 234, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 32px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
 
-.service-box p {
-  color: #fff;
-  font-size: 14px;
-  line-height: 1.8;
-  font-family: 'Noto Serif JP', serif;
-}
-.service-box h3 {
-  color: #2C3E50;
-  font-size: 25px;
-  padding-top: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
+  .service-box:hover {
+    background-color: rgba(149, 149, 149, 0.55);
+  }
 
-.service-box p {
-  font-family: "Darumadrop One", sans-serif;
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.7;
-  text-align: left;
-  margin: 0 auto;
-  width: 80%;
-}
+  .service-box img {
+    width: 60%;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 6px rgba(255, 255, 255, 0.3));
+  }
+
+  .service-box p {
+    font-family: "Darumadrop One", sans-serif;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.7;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+
 
 
 
@@ -540,8 +528,7 @@ main{
 
 
 
-@media (hover: none) and (pointer: coarse) {
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (hover: none) and (pointer: coarse) {
 	/* 480px以下に適用されるCSS（スマホ用） */
 
 
@@ -764,98 +751,82 @@ main{
 
 
 /* サービス */
-.service {
-  padding:0;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-.service h2{
-  font-size: 30px;
-  display: inline-block;
-  font-family: "Times New Roman";
-}
-.service p{
-  color: #1E2B45;
-  font-size: 15px;
-}
-.service-container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  padding-top: 50px;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
+.accordion-toggle {
+    display: block;
+    background: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+  }
 
-.service-box {
-  width: calc(50% - 20px);
-  background-color: #ffe6e8;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  flex: 1 1 calc(33.333% - 20px);
-  padding: 5px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  justify-content: space-between;
-  text-align: center;
-  height: 150px;
-}
-.service-box:hover{
-  background-color: initial;
-}
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
 
-.HP-img{
-  width: 60%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-.LP-img{
-  background-color: none;
-  width: 60%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-.banner-img{
-  width: 50%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-.writing-img{
-  width: 50%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-.support-img{
-  width: 50%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-.teach-img{
-  width: 50%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-.service-box h3 {
-  color: #2C3E50;
-  font-size: 10px;
-  font-family: 'Times New Roman', Times, serif;
-}
+  .service-box.active .accordion-content {
+    max-height: 400px; /* 内容に応じて調整してね */
+  }
+  .service {
+    padding:0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .service h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Times New Roman";
+  }
+  .service p{
+    color: #1E2B45;
+    font-size: 15px;
+  }
+    .service-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .service-box {
+    width: 100%;
+    height: 30px;
+    background-color: #ffe6e8;
+    transition: background-color 0.3s ease;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    justify-content: space-between;
+    text-align: center;
+    height: 150px;
+  }
+  .service-box:hover {
+    background-color: #ffe6e8;
+
+  }
+  .service-box img {
+    display: none;
+  }
+
+  .service-box h3 {
+    color: #2C3E50;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
 
 .service-box p {
-  font-size: 10px;
+  font-size: 15px;
   color: #444;
   line-height: 1;
   text-align: left;
@@ -948,7 +919,18 @@ main{
   font-size: 10px;
 }
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
