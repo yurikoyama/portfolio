@@ -324,74 +324,53 @@ main{
   font-size: 20px;
 }
 .service-container {
-  display: flex;
-  padding-top: 100px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  padding: 80px 24px;
+  margin: auto;
 }
 
 .service-box {
-  background-color: #ffe6e8;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  flex: 1 1 calc(33.333% - 20px);
-  padding: 30px;
-  margin-bottom: 40px;
-  border-radius: 15px;
-  justify-content: space-between;
-  height: 350px;
-}
-.service-box:hover{
-  background-color: rgba(88, 88, 88, 0.421); /* 薄い黒（グレー） */
+  background: rgb(255, 234, 234);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.HP-img{
-  width: 55%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
+.service-box:hover {
+  background-color: #9595958d;
 }
-.LP-img{
-  background-color: none;
+
+.service-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFD700; /* ゴールド */
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.service-box img {
   width: 60%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 2px 6px rgba(255, 255, 255, 0.3));
 }
-.banner-img{
-  width: 50%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-.writing-img{
-  width: 50%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-.support-img{
-  width: 50%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-.teach-img{
-  width: 50%;
-  object-fit: contain;
-  position: relative;
-  padding: 0 auto;
-  margin: 0 auto;
+
+.service-box p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.8;
+  font-family: 'Noto Serif JP', serif;
 }
 .service-box h3 {
   color: #2C3E50;
-  font-size: 28px;
+  font-size: 25px;
   padding-top: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -710,6 +689,8 @@ main{
   background-position: center;
   font-family: 'Noto Serif JP', serif;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 0;
   padding-bottom: 100px;
@@ -808,7 +789,7 @@ main{
 }
 
 .service-box {
-  width: 50%;
+  width: calc(50% - 20px);
   background-color: #ffe6e8;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
