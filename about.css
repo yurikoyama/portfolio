@@ -148,7 +148,7 @@ body{
   margin-bottom: 20px;
 }
 .nav_item a:hover{
-  color: orange;
+  color: pink;
 }
 .nav_content li{
   padding: 20px;
@@ -157,9 +157,7 @@ body{
 #drawer_input:checked ~ .nav_content {
   left: 0;
 }
-.site-tagline{
-  padding-top: 20px;
-}
+
 
 
 
@@ -446,6 +444,19 @@ body{
   transition: 0.5s;
   position: absolute;
 }
+.nav_item a {
+  font-family: 'Noto Sans JP', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: #1E2B45;
+  text-align: center;
+}
+
+.nav_item a:hover {
+  color: #f3c6cc;
+}
+
+
+
 
 
 
